@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+<<<<<<< HEAD
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -73,6 +74,24 @@ temp/
 *.swp
 *.swo
 *~
+=======
+/.pnp
+.pnp.js
+
+# Production builds
+.next/
+out/
+
+# Environment variables
+.env*.local
+
+# Vercel
+.vercel
+
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab
 
 # OS generated files
 .DS_Store
@@ -81,6 +100,7 @@ temp/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+<<<<<<< HEAD
 Thumbs.db
 
 # TypeScript
@@ -88,3 +108,6 @@ Thumbs.db
 
 # Vercel
 .vercel
+=======
+Thumbs.db
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab

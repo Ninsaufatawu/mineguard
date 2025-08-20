@@ -1,6 +1,10 @@
 "use client"
 
+<<<<<<< HEAD
 import { useState, useEffect, Suspense } from "react"
+=======
+import { useState, useEffect } from "react"
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab
 import { useSearchParams } from "next/navigation"
 import { 
   Card, 
@@ -27,7 +31,11 @@ import {
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 
+<<<<<<< HEAD
 function ResetPasswordContent() {
+=======
+export default function ResetPasswordPage() {
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab
   const [password, setPassword] = useState<string>("")
   const [confirmPassword, setConfirmPassword] = useState<string>("")
   const [showPassword, setShowPassword] = useState<boolean>(false)
@@ -358,6 +366,7 @@ function ResetPasswordContent() {
     </div>
   )
 }
+<<<<<<< HEAD
 
 export default function ResetPasswordPage() {
   return (
@@ -376,3 +385,5 @@ export default function ResetPasswordPage() {
     </Suspense>
   )
 }
+=======
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab

@@ -31,9 +31,13 @@ import {
   Shield,
   ArrowLeft,
   Mail,
+<<<<<<< HEAD
   Send,
   Eye,
   EyeOff
+=======
+  Send
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab
 } from "lucide-react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
@@ -41,7 +45,10 @@ import Link from "next/link"
 export default function AdminLoginPage() {
   const [email, setEmail] = useState<string>("")
   const [password, setPassword] = useState<string>("")
+<<<<<<< HEAD
   const [showPassword, setShowPassword] = useState<boolean>(false)
+=======
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
   
@@ -158,7 +165,15 @@ export default function AdminLoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-4">
       <Card className="w-full max-w-md shadow-2xl border-0 bg-white/95 backdrop-blur-sm">
+<<<<<<< HEAD
         
+=======
+        <div className="w-full relative p-4">
+          <Link href="/" className="absolute top-4 left-4 p-2 rounded-full bg-slate-100 hover:bg-slate-200 transition-colors">
+            <ArrowLeft size={20} className="text-slate-700" />
+          </Link>
+        </div>
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab
 
         <CardHeader className="pb-4 flex flex-col items-center space-y-2">
           <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mb-2 shadow-lg">
@@ -203,13 +218,20 @@ export default function AdminLoginPage() {
                 <KeyRound className="absolute left-3 top-3.5 h-4 w-4 text-slate-400" strokeWidth={2} />
                 <Input
                   id="password"
+<<<<<<< HEAD
                   type={showPassword ? "text" : "password"}
                   placeholder="Enter your password"
                   className="pl-10 pr-10 h-12 border border-slate-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+=======
+                  type="password"
+                  placeholder="Enter your password"
+                  className="pl-10 h-12 border border-slate-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
                 />
+<<<<<<< HEAD
                 <button
                   type="button"
                   className="absolute right-3 top-3.5 h-4 w-4 text-slate-400 hover:text-slate-600 focus:outline-none"
@@ -217,6 +239,8 @@ export default function AdminLoginPage() {
                 >
                   {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                 </button>
+=======
+>>>>>>> fefd978cdfd5dba4daf1b4898b3b34f3a6ce01ab
               </div>
             </div>
 
