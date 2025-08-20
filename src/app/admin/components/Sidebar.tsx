@@ -142,19 +142,14 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, progress }) 
               </div>
               
               <div className="space-y-3">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mb-8">
                   <span className="text-xs text-green-200">Satellite Data</span>
                   <div className="flex items-center space-x-1">
                     <div className="w-1.5 h-1.5 bg-green-300 rounded-full" />
                     <span className="text-xs text-green-100 font-medium">Live</span>
                   </div>
                 </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-xs text-green-200">Storage</span>
-                  <span className="text-xs text-green-100 font-medium">{progress}%</span>
-                </div>
-                
+               
                 <div className="relative">
                   <Progress 
                     value={progress} 
